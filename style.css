@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --accent: rgba(15, 66, 50, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+/* CODING NAVIGATION START */
+
+.navigation-hero-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.navigation-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.navigation-bar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+nav {
+  width: 95%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  background: var(--glass-bg);
+  border-radius: 5px;
+  padding: 24px;
+  color: #fff;
+  overflow: hidden;
+  /* border: 1px solid var(--glass-border); */
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  backdrop-filter: blur(12px) saturate(120%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+}
+
+.logo {
+  color: #071110;
+  font-size: 0.7rem;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  height: 100%;
+  align-items: center;
+  list-style-type: none;
+}
+
+.links ul a {
+  color: #071110;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.get-started {
+  width: 100px;
+  height: 30px;
+}
+
+.get-started button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+  background: #071110;
+  color: #fff;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: relative;
+  background: url(./backgrounds/download\ \(4\)_imgupscaler.ai_General_8K.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.endless {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.discovery {
+  position: absolute;
+  top: 38%;
+  left: 2%;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.hero-section button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 30px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  backdrop-filter: blur(12px) saturate(120%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.6rem;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  left: 2%;
+}
+
+.madison-context {
+  width: 250px;
+  height: 200px;
+  background: var(--glass-bg);
+  border-radius: 5px;
+  padding: 24px;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 77%;
+  overflow: hidden;
+  /* border: 1px solid var(--glass-border); */
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  backdrop-filter: blur(12px) saturate(120%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+}
+
+.madison-context p {
+  font-size: 0.7rem;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 85%;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  font-size: 0.6rem;
+  padding: 0 20px;
+  color: #ddd;
+  font-weight: 300;
+}
+
+/* Statistics */
+
+.statistics-container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.statistics-content {
+  width: 95%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.statistics-heading {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.statistics-heading .statistics-left-content {
+  width: 100%;
+  height: 75%;
+  text-align: center;
+}
+
+.statistics-heading .statistics-left-content span {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.statistics-heading .statistics-left-content h2 {
+  font-size: 2.5rem;
+}
+
+.statistics-heading .statistics-right-content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.statistics-right-content img {
+  width: 115px;
+  height: 90px;
+}
+
+.statistics-heading .statistics-left-content p {
+
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+.statistics-heading .statistics-right-content p {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.statistics {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.customers,
+.sales,
+.Years {
+  flex: 1 1 30%;
+  height: 100%;
+  background: red;
+  border-radius: 10px;
+  padding: 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.customers,
+.sales,
+.Years>p {
+  font-size: 0.7rem;
+}
+
+.customers h2,
+.sales h2,
+.Years h2 {
+  font-size: 2rem;
+}
+
+.customers {
+  background: #1e1e1e;
+  color: #fff;
+  position: relative;
+}
+
+.customers .img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.customer-one {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  background: url(./RealEstate/pexels-emmy-e-1252107-2381069.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customer-two {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  background: url(./RealEstate/90520e77-9ff9-4a57-859d-efb07cbe9400.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customer-three {
+  position: absolute;
+  right: 20%;
+  top: 70%;
+  background: url(./RealEstate/Photo\ thumbs\ up\ hands\ and\ portrait\ of\ an….jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sales,
+.Years {
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+}
+
+.sales .icon,
+.Years .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Listings */
+
+.listings-container {
+  width: 100%;
+  min-height: 130vh;
+  height: auto;
+  padding: 50px 10px;
+  background: #f8f8f8;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.listings-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.listings-heading {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  line-height: 2;
+}
+
+.listings-heading p {
+  font-size: 0.8rem;
+}
+
+.property-listings {
+  width: 95%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.buy-tag {
+  width: 70px;
+  height: 30px;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+  color: #071110;
+  position: absolute;
+  top: 5%;
+  font-weight: 600;
+  left: 10px;
+}
+
+.property-listings .property-img {
+  width: 100%;
+  height: 60%;
+  background: red;
+  border-radius: 10px;
+}
+
+.property-listings .property-one .property-img {
+  background: url(./backgrounds/download\ \(4\)_imgupscaler.ai_General_8K.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property-listings .property-two .property-img {
+  background: url(./RealEstate/1647cb05-eea3-4360-a3ad-a8bedecceeb9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property-listings .property-three .property-img {
+  background: url(./RealEstate/8bfdfdfa-b58d-43c3-bc22-f8b81634c2b2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property-listings .property-four .property-img {
+  background: url(./RealEstate/download\ \(8\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property-listings .property-five .property-img {
+  background: url(./RealEstate/download\ \(7\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property-listings .property-six .property-img {
+  background: url(./RealEstate/download\ \(6\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.property {
+  flex: 1 1 30%;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  line-height: 2;
+  position: relative;
+}
+
+.property p {
+  font-size: 0.7rem;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.property h2 {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.house-properties {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  font-size: 0.7rem;
+  padding: 0 10px;
+}
+
+.price-purchase {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Properties section */
+
+.property-types {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 10px;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1e1e1e;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+}
+
+.next-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1e1e1e;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.next-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(245, 169, 98, 0.3);
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 400px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.card-size {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.card-size-icon {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #F5A962 0%, #FFB84D 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-text {
+  color: white;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.card-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #071110;
+  font-size: 13px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.card-arrow:hover {
+  transform: scale(1.1) rotate(45deg);
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(to right, #F5A962 0%, #FFB84D 50%, #FF6B6B 100%);
+  border-radius: 2px;
+  width: 35%;
+  margin-bottom: 40px;
+}
+
+/* testimonial section */
+
+.testimonial-section {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background: #f8f8f8;
+
+  padding: 50px 10px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.testimonials-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-heading {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-heading h2 {
+  font-size: 2.5rem;
+  width: 30ch;
+  text-align: center;
+}
+
+.testimonials-heading p {
+  font-size: 0.6rem;
+  margin-top: 20px;
+}
+
+.testimonials {
+  width: 95%;
+  height: 41vh;
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.testimonial-track-section {
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+
+.testimonial-track-section p {
+  bottom: 60px;
+  position: absolute;
+  font-size: 0.7rem;
+}
+
+.track {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.track-container {
+  width: 150px;
+  height: 2px;
+  border-radius: 20px;
+  background: #1e1e1e;
+}
+
+.track button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.testimonial-track {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.testimonial {
+  flex: 1 1 30%;
+  height: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+}
+
+.testimonial p {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 20%;
+  width: 50ch;
+}
+
+.person-details {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: 20px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.person-img {
+  width: 40px;
+  height: 40px;
+  background: url(./RealEstate/pexels-emmy-e-1252107-2381069.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* Blog section */
+
+.blog-section {
+  width: 100%;
+  min-height: 90vh;
+  height: auto;
+  padding: 50px 10px;
+}
+
+.blog-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-heading {
+  width: 95%;
+  height: 15vh;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.blog-heading p {
+  font-size: 0.7rem;
+}
+
+.blogs-container {
+  width: 95%;
+  height: 50vh;
+  display: flex;
+  gap: 20px;
+}
+
+.blog-one {
+  width: 400px;
+  height: 100%;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  position: relative;
+}
+
+.blog-one p {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 40%;
+}
+
+.read-more {
+  width: 80%;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.read-more button {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.blog {
+  flex: 1 1 30%;
+  height: 100%;
+}
+
+.blog-img {
+  width: 100%;
+  height: 50%;
+  background: url(./RealEstate/pexels-heyho-7031407.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog h2 {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.blog p {
+  font-size: 0.7rem;
+}
+
+/* cta container */
+
+.cta-container {
+  width: 100%;
+  height: 60vh;
+  background: url(./RealEstate/download\ \(5\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* footer */
+
+footer {
+  background-color: #f8f8f8;
+  padding: 60px 80px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #0066cc;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-bottom a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #0066cc;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    padding: 40px 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
