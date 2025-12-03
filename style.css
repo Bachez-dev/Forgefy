@@ -21,6 +21,11 @@ body {
 .navigation-hero-container {
   width: 100%;
   height: 100vh;
+  background: url(./backgrounds/ChatGPT\ Image\ Dec\ 3\,\ 2025\,\ 08_47_53\ PM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .navigation-content {
@@ -35,7 +40,7 @@ body {
 
 .navigation-bar {
   width: 100%;
-  height: 40px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +49,7 @@ body {
 
 nav {
   width: 95%;
-  height: 40px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,134 +60,206 @@ nav {
 nav {
   width: 100%;
   height: 40px;
-  background: var(--glass-bg);
   border-radius: 5px;
   padding: 24px;
   color: #fff;
   overflow: hidden;
-  /* border: 1px solid var(--glass-border); */
-  -webkit-backdrop-filter: blur(12px) saturate(120%);
-  backdrop-filter: blur(12px) saturate(120%);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+}
+
+.nav-left-side {
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
 
 .logo {
-  color: #071110;
+  color: #ffffff;
   font-size: 0.7rem;
 }
 
 .links ul {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 20px;
   height: 100%;
   align-items: center;
   list-style-type: none;
 }
 
 .links ul a {
-  color: #071110;
-  font-size: 0.8rem;
-  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.get-started {
-  width: 100px;
-  height: 30px;
+.links ul .active {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  background: #ffffff;
+  border: none;
 }
 
-.get-started button {
-  width: 100%;
-  height: 100%;
-  border: none;
+.links ul a {
+  padding: 5px 20px;
+  border: 1px solid #ffffff;
   border-radius: 30px;
-  background: #071110;
-  color: #fff;
-  font-size: 0.6rem;
-  cursor: pointer;
 }
+
+.get-started {
+  width: 130px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+  color: #071110;
+  padding: 10px 5px;
+  justify-content: space-between;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.get-started a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #071110;
+  font-weight: 600;
+}
+
+.btn-circle-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #071110;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HERO SECTION START */
 
 .hero-section {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 70px);
   position: relative;
-  background: url(./backgrounds/download\ \(4\)_imgupscaler.ai_General_8K.jpg);
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: multiply;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
+}
+
+.hero-word {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.648);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .endless {
   position: absolute;
-  top: 20%;
-  left: 2%;
-  font-size: 6rem;
+  top: 10%;
+  left: 1%;
+  font-size: .8rem;
+  width: 10%;
   color: #fff;
+  font-weight: 300;
+}
+
+.endless-two {
+  position: absolute;
+  top: 80%;
+  left: 1%;
+  font-size: .8rem;
+  width: 10%;
+  color: #fff;
+  font-weight: 300;
 }
 
 .discovery {
   position: absolute;
-  top: 38%;
-  left: 2%;
-  font-size: 6rem;
+  top: 10%;
+  right: 2%;
+  font-size: .8rem;
+  width: 10%;
   color: #fff;
+  font-weight: 300;
 }
 
-.hero-section button {
-  padding: 10px 40px;
-  border: none;
+.hero-section .consultation {
+  width: 130px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+  color: #071110;
+  padding: 10px 5px;
+  justify-content: space-between;
   border-radius: 30px;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  -webkit-backdrop-filter: blur(12px) saturate(120%);
-  backdrop-filter: blur(12px) saturate(120%);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 0.6rem;
   cursor: pointer;
   position: absolute;
-  top: 60%;
-  left: 2%;
+  top: 85%;
+  left: 45%;
+  font-size: 12px;
+}
+
+.consultation a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #071110;
+  font-weight: 600;
 }
 
 .madison-context {
-  width: 250px;
-  height: 200px;
-  background: var(--glass-bg);
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.madison-context-two {
+  width: 200px;
+  height: 100px;
   border-radius: 5px;
   padding: 24px;
   color: #fff;
   position: absolute;
-  top: 20%;
-  left: 77%;
+  top: 72%;
+  right: 20px;
   overflow: hidden;
-  /* border: 1px solid var(--glass-border); */
-  -webkit-backdrop-filter: blur(12px) saturate(120%);
-  backdrop-filter: blur(12px) saturate(120%);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.madison-context p {
+.madison-context p,
+.madison-context-two p {
   font-size: 0.7rem;
-  margin-top: 30px;
   line-height: 1.5;
 }
 
-.horizontal {
-  width: 100%;
-  height: 1px;
-  background: #ddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 85%;
-}
 
 .hero-footer {
   position: absolute;
@@ -198,172 +275,85 @@ nav {
   font-weight: 300;
 }
 
-/* Statistics */
+.about-heading-name{
+  margin-top: 30px;
+}
 
-.statistics-container {
+.about-heading-txt-one,
+.about-heading-txt-two {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.about-heading-txt-two {
+  color: #F5A962;
+  margin-left: 30px;
+}
+
+.about-footer-context{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.about-text-two{
+  flex: 1;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.about-footer-context-img{
+  flex: 1;
+  height: 150px;
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 09_59_23\ AM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+/* ABOUT US */
+
+.about-container {
   width: 100%;
   min-height: 100vh;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 50px 0;
 }
 
-.statistics-content {
+.about-content {
   width: 95%;
   height: 100%;
-  padding: 20px 10px;
-}
-
-.statistics-heading {
-  width: 100%;
-  height: 60%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.5;
-}
-
-.statistics-heading .statistics-left-content {
-  width: 100%;
-  height: 75%;
-  text-align: center;
-}
-
-.statistics-heading .statistics-left-content span {
-  font-style: italic;
-  font-weight: 200;
-}
-
-.statistics-heading .statistics-left-content h2 {
-  font-size: 2.5rem;
-}
-
-.statistics-heading .statistics-right-content {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
-
-.statistics-right-content img {
-  width: 115px;
-  height: 90px;
-}
-
-.statistics-heading .statistics-left-content p {
-
-  font-size: 0.7rem;
-  margin-top: 10px;
-}
-
-.statistics-heading .statistics-right-content p {
-  font-size: 0.8rem;
-  margin-top: 10px;
-}
-
-.statistics {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
-.customers,
-.sales,
-.Years {
-  flex: 1 1 30%;
-  height: 100%;
-  background: red;
-  border-radius: 10px;
-  padding: 30px;
-  line-height: 2;
+.about-image{
+  flex: 1;
+  height: 500px;
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 02_47_23\ PM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.about-context {
+  flex: 1;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
+  gap: 20px;
 }
 
-.customers,
-.sales,
-.Years>p {
-  font-size: 0.7rem;
-}
-
-.customers h2,
-.sales h2,
-.Years h2 {
-  font-size: 2rem;
-}
-
-.customers {
-  background: #1e1e1e;
-  color: #fff;
-  position: relative;
-}
-
-.customers .img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.customer-one {
-  position: absolute;
-  right: 20%;
-  top: 20%;
-  background: url(./RealEstate/pexels-emmy-e-1252107-2381069.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.customer-two {
-  position: absolute;
-  right: 10%;
-  top: 45%;
-  background: url(./RealEstate/90520e77-9ff9-4a57-859d-efb07cbe9400.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.customer-three {
-  position: absolute;
-  right: 20%;
-  top: 70%;
-  background: url(./RealEstate/Photo\ thumbs\ up\ hands\ and\ portrait\ of\ an….jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sales,
-.Years {
-  border: 1px solid #ddd;
-  background: #f8f8f8;
-}
-
-.sales .icon,
-.Years .icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #fff;
-  border: 1px solid #ddd;
-  margin-top: -10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-text-one {
+  font-size: 1.5rem;
 }
 
 /* Listings */
@@ -431,42 +421,42 @@ nav {
 }
 
 .property-listings .property-one .property-img {
-  background: url(./backgrounds/download\ \(4\)_imgupscaler.ai_General_8K.jpg);
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 02_47_23\ PM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .property-listings .property-two .property-img {
-  background: url(./RealEstate/1647cb05-eea3-4360-a3ad-a8bedecceeb9.jpg);
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 09_59_23\ AM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .property-listings .property-three .property-img {
-  background: url(./RealEstate/8bfdfdfa-b58d-43c3-bc22-f8b81634c2b2.jpg);
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 02_39_33\ PM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .property-listings .property-four .property-img {
-  background: url(./RealEstate/download\ \(8\).jpg);
+  background: url(./backgrounds/ChatGPT\ Image\ Dec\ 3\,\ 2025\,\ 08_47_53\ PM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .property-listings .property-five .property-img {
-  background: url(./RealEstate/download\ \(7\).jpg);
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 02_39_33\ PM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .property-listings .property-six .property-img {
-  background: url(./RealEstate/download\ \(6\).jpg);
+  background: url(./backgrounds/ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 02_39_33\ PM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
